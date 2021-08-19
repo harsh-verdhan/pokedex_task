@@ -1,8 +1,8 @@
 import React from 'react'
-import { View,Text,StyleSheet,TouchableOpacity} from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
 
 
-export default function PokemonList({name,onPress}) {
+export default function PokemonList({ name, onPress }) {
   return (
     <TouchableOpacity onPress={onPress}>
       <View style={styles.container} >
@@ -13,14 +13,14 @@ export default function PokemonList({name,onPress}) {
 }
 
 const styles = StyleSheet.create({
-  container:{
+  container: {
     borderBottomWidth: 2,
     borderColor: "lightgrey"
   },
-  text:{
-    fontSize:25,
-    padding:14,
-    textTransform:"capitalize"
+  text: {
+    fontSize: 25,
+    padding: 14,
+    textTransform: "capitalize"
   }
 
 })
